@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 5px 80px;
+  background-color: #fff;
+
+  /* position */
+  position: sticky;
+  top: 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 100;
+  font-family: "Caprasimo", cursive;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
