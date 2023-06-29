@@ -1,7 +1,11 @@
 import React from "react";
 
 const Login = () => {
-  return <div>Login page</div>;
+  return (
+    <section className="">
+      <h1 className="font-display text-4xl">Login</h1>
+    </section>
+  );
 };
 
 export default Login;

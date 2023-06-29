@@ -1,26 +1,29 @@
 import React from "react";
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
+import { Header } from "./components/layout";
+
 const App = () => {
   return (
-    <main>
-      <Router>
+    <Router>
+      <Header />
+      <main className="container">
         <Switch>
-          <Route path="/" exact>
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/login" exact>
+          <Route exact path="/login">
             <Login />
           </Route>
           <Route path="*">
             <NotFound />
           </Route>
         </Switch>
-      </Router>
-    </main>
+      </main>
+    </Router>
   );
 };
 
