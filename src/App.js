@@ -6,6 +6,8 @@ import NotFound from "./pages/NotFound";
 
 import { Header } from "./components/layout";
 import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+import Todos from "./pages/Todos";
 
 const App = () => {
   return (
@@ -21,6 +23,12 @@ const App = () => {
           </Route>
           <Route exact path="/register">
             <Register />
+          </Route>
+          <Route exact path="/dashboard">
+            <Dashboard />
+          </Route>
+          <Route exact path="/todos">
+            <Todos />
           </Route>
           <Route path="*">
             <NotFound />
