@@ -59,7 +59,7 @@ const Register = () => {
         <div className="mb-2">
           <p className="text-center">
             Already have an account ?{" "}
-            <Link className="underline" to="/login">
+            <Link className="underline" to="/todos">
               Login
             </Link>
           </p>

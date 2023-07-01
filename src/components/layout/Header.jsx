@@ -8,7 +8,9 @@ const Header = () => {
       <section className="flex justify-between items-center py-5">
         {/* LEFT */}
         <section>
-          <h1 className="font-display text-4xl">todoApp</h1>
+          <Link to="/">
+            <h1 className="font-display text-4xl">todoApp</h1>
+          </Link>
         </section>
         {/* RIGHT */}
         <section className="flex justify-around gap-2">

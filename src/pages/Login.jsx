@@ -37,7 +37,7 @@ const Login = () => {
         <div className="mb-2">
           <p className="text-center">
             Don't have an account ?{" "}
-            <Link className="underline" to="/register">
+            <Link className="underline" to="/dashboard">
               Register
             </Link>
           </p>

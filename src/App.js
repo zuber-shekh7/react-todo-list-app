@@ -8,6 +8,7 @@ import { Header } from "./components/layout";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Todos from "./pages/Todos";
+import TodoInfo from "./pages/TodoInfo";
 
 const App = () => {
   return (
@@ -29,6 +30,9 @@ const App = () => {
           </Route>
           <Route exact path="/todos">
             <Todos />
+          </Route>
+          <Route exact path="/todos/:id">
+            <TodoInfo />
           </Route>
           <Route path="*">
             <NotFound />
