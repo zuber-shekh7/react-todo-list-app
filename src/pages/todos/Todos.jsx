@@ -1,6 +1,6 @@
 import React from "react";
 
-import TodoItem from "../components/todos/TodoItem";
+import TodoItem from "../../components/todos/TodoItem";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Todos = () => {

@@ -7,8 +7,8 @@ import NotFound from "./pages/NotFound";
 import { Header } from "./components/layout";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
-import Todos from "./pages/Todos";
-import TodoInfo from "./pages/TodoInfo";
+import { TodoInfo, Todos } from "./pages/todos";
+import CreateTodo from "./pages/todos/CreateTodo";
 
 const App = () => {
   return (
@@ -30,6 +30,9 @@ const App = () => {
           </Route>
           <Route exact path="/todos">
             <Todos />
+          </Route>
+          <Route exact path="/todos/create">
+            <CreateTodo />
           </Route>
           <Route exact path="/todos/:id">
             <TodoInfo />
