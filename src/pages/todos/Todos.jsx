@@ -2,7 +2,7 @@ import React from "react";
 
 import TodoItem from "../../components/todos/TodoItem";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-
+import { FaPlusCircle } from "react-icons/fa";
 const Todos = () => {
   return (
     <section className="container mx-auto mt-5">
@@ -21,11 +21,11 @@ const Todos = () => {
             </select>
           </div>
           <div>
-            <Link
-              className="bg-black py-2 px-5 text-white rounded"
-              to="/todos/create"
-            >
-              Create
+            <Link to="/todos/create">
+              <div className="bg-black py-2 px-3 text-white rounded flex justify-center items-center space-x-2">
+                <FaPlusCircle size={18} />
+                <span>Create</span>
+              </div>
             </Link>
           </div>
         </div>

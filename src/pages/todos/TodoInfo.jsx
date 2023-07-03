@@ -1,9 +1,12 @@
 import React from "react";
+import { Breadcrumb } from "../../components/layout";
 
 const TodoInfo = () => {
   return (
     <section className="container mx-auto mt-5">
       <section>
+        <Breadcrumb className="mb-5" links={[{ text: "Back", to: "/todos" }]} />
+
         <div className="mb-5">
           <p className="font-thin">Title</p>
           <h1 className="font-display text-4xl">Todo Info</h1>
